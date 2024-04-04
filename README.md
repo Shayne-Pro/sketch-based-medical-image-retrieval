@@ -82,6 +82,14 @@ To run the SBMIR application located in the `App/` directory, follow these steps
 
 This will start the SBMIR application, and you can interact with it through the provided user interface.
 
+## Application Screenshot
+
+Below is a screenshot of the SBMIR application in action:
+
+![SBMIR Application Screenshot](static/Screenshot.png)
+
+The screenshot showcases the user interface of the SBMIR application, demonstrating how users can interact with the system to perform sketch-based medical image retrieval.
+
 ## Citation
 
 If you use this code or the SBMIR system in your research, please cite the following paper:
