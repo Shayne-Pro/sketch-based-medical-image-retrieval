@@ -62,6 +62,26 @@ The trained models, namely `bottom2x2_margin-10-epoch=0299.ckpt`, used in this r
 
 After downloading the pre-trained models, place them in the `SharedResources/saved_models/MICCAI_BraTS/` directory.
 
+## Generating Embedding Representations
+
+After preprocessing the MICCAI BraTS Dataset, navigate to the `ModelTraining/` directory and use the downloaded trained model to compute the embedding representations for each slice of the preprocessed dataset. This corresponds to the calculation of reference vectors for the reference dataset in the paper.
+
+To generate the embedding representations, run the following command: `python run_training.py --config bottom2x2_margin-10_config.json --mode test`
+
+This command will create patient-specific folders inside `SharedResources/latent_codes/MICCAI_BraTS_2019_Data_Training/bottom2x2_margin-10-epoch=0299/`, and within each folder, the slice-level embedding representations will be saved as numpy files.
+
+## Running the SBMIR Application
+
+To run the SBMIR application located in the `App/` directory, follow these steps:
+
+1. Install MongoDB on your system. You can find the installation instructions for your operating system on the official MongoDB website: [MongoDB Installation Guide](https://docs.mongodb.com/manual/installation/).
+
+2. Navigate to the `App/widget/contour_module/c_geometry` directory and compile the Cython code by running the following command: `python cythonize.py build_ext --inplace`
+
+3. Finally, navigate to the `App/` directory and run the SBMIR application using the following command: `python main.py`
+
+This will start the SBMIR application, and you can interact with it through the provided user interface.
+
 ## Citation
 
 If you use this code or the SBMIR system in your research, please cite the following paper:

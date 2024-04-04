@@ -4,7 +4,7 @@
     "n_epochs": 300,
     "visible_devices": "0, 1, 2, 3",
     "distributed_backend": "ddp",
-    "resume_checkpoint": false,
+    "resume_checkpoint": "${ROOT_PATH}/SharedResources/saved_models/MICCAI_BraTS/bottom2x2_margin-10-epoch=0299.ckpt",
     "num_sanity_val_steps": 2,
     "limit_val_batches": 10,
     "training_dataset": "concat_dataset",
@@ -13,7 +13,7 @@
   "save": {
     "study_name": "bottom2x2_margin-10-epoch=0299",
     "test_save_dir_name": "MICCAI_BraTS_2019_Data_Training",
-    "save_dir_path": "${ROOT_PATH}/SharedResources/latent_codes_temp/",
+    "save_dir_path": "${ROOT_PATH}/SharedResources/latent_codes/",
     "n_save_images": 16,
     "save_interval": 50,
     "save_limit_num": 3
