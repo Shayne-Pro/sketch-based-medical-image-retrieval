@@ -53,6 +53,14 @@ To run the preprocessing script, execute the following command: `python preproce
 
 This command will preprocess the datasets specified in the `src_dir_path` of `preprocess_config.json` according to the configuration settings. The preprocessed data will be saved as `.npy` files in the output directory specified by `dst_dir_path`.
 
+## Trained Models
+
+The trained models used in this repository can be downloaded from Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10925122.svg)](https://doi.org/10.5281/zenodo.10925122)
+
+After downloading the pre-trained models, place them in the `SharedResources/saved_models/MICCAI_BraTS/` directory.
+
 ## Citation
 
 If you use this code or the SBMIR system in your research, please cite the following paper:
