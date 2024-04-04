@@ -1,6 +1,16 @@
 # Sketch-Based Medical Image Retrieval
 
-This repository contains the official implementation of the sketch-based medical image retrieval (SBMIR) system described in the paper **"Sketch-based semantic retrieval of medical images"** by Kazuma Kobayashi et al. in the _Medical Image Analysis_ (2024).
+This repository contains the official implementation of the sketch-based medical image retrieval (SBMIR) system described in the paper **"Sketch-based semantic retrieval of medical images"** by Kazuma Kobayashi et al. in _Medical Image Analysis_ (2024).
+
+The paper is available at: [Sketch-based semantic retrieval of medical images - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1361841523003201)
+
+## Application Screenshot
+
+Below is a screenshot of the SBMIR application in action:
+
+![SBMIR Application Screenshot](static/Screenshot.png)
+
+The screenshot showcases the user interface of the SBMIR application, demonstrating how users can interact with the system to perform sketch-based medical image retrieval.
 
 ## Overview
 
@@ -81,14 +91,6 @@ To run the SBMIR application located in the `App/` directory, follow these steps
 3. Finally, navigate to the `App/` directory and run the SBMIR application using the following command: `python main.py`
 
 This will start the SBMIR application, and you can interact with it through the provided user interface.
-
-## Application Screenshot
-
-Below is a screenshot of the SBMIR application in action:
-
-![SBMIR Application Screenshot](static/Screenshot.png)
-
-The screenshot showcases the user interface of the SBMIR application, demonstrating how users can interact with the system to perform sketch-based medical image retrieval.
 
 ## Citation
 
