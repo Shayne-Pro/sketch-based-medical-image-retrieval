@@ -16,9 +16,42 @@ The SBMIR system enables users to retrieve medical images based on sketches of a
 
 Please note that currently, only the `App/` folder is available for public use. The contents of the `ModelTraining/` folder are still under preparation.
 
-## Data
+## Glioma Dataset
 
-The glioma dataset used in the paper is available from the MICCAI BraTS Challenge. The lung cancer dataset was collected from a single hospital and remains under their custody.
+This repository uses the BraTS Dataset from the Multimodal Brain Tumor Segmentation Challenge 2019. The dataset can be downloaded from the [BraTS 2019 website](https://www.med.upenn.edu/cbica/brats2019/data.html). It consists of the following three datasets:
+
+- MICCAI_BraTS_2019_Data_Training
+- MICCAI_BraTS_2019_Data_Validation
+- MICCAI_BraTS_2019_Data_Testing
+
+After downloading and extracting the datasets, place them in the `SharedResources/datasets` directory. The directory structure should look like this:
+
+```
+SharedResources/
+    └── datasets/
+        ├── MICCAI_BraTS_2019_Data_Training/
+        │   ├── BraTS19_2013_0_1/
+        │   │   ├── BraTS19_2013_0_1_flair.nii.gz
+        │   │   ├── BraTS19_2013_0_1_t1.nii.gz
+        │   │   ├── BraTS19_2013_0_1_t1ce.nii.gz
+        │   │   ├── BraTS19_2013_0_1_t2.nii.gz
+        │   │   └── BraTS19_2013_0_1_seg.nii.gz
+        │   ├── BraTS19_2013_1_1/
+        │   │   └── ...
+        │   └── ...
+        ├── MICCAI_BraTS_2019_Data_Validation/
+        │   └── ...
+        └── MICCAI_BraTS_2019_Data_Testing/
+            └── ...
+```
+
+## Preprocessing
+
+To preprocess the BraTS Dataset, use the `preprocess.py` script along with the `preprocess_config.json` configuration file.
+
+To run the preprocessing script, execute the following command: `python preprocess.py --config preprocess_config.json`
+
+This command will preprocess the datasets specified in the `src_dir_path` of `preprocess_config.json` according to the configuration settings. The preprocessed data will be saved as `.npy` files in the output directory specified by `dst_dir_path`.
 
 ## Citation
 
