@@ -12,9 +12,7 @@ The SBMIR system enables users to retrieve medical images based on sketches of a
 ## Repository Structure
 
 - `App/`: Contains the implementation of the SBMIR system. By setting up the same environment, you can experience how the SBMIR system operates in practice.
-- `ModelTraining/`: _(Under preparation)_ Will contain the learning algorithm for the feature extraction module of the SBMIR system.
-
-Please note that currently, only the `App/` folder is available for public use. The contents of the `ModelTraining/` folder are still under preparation.
+- `ModelTraining/`: Contains the learning algorithm for the feature extraction module of the SBMIR system.
 
 ## Glioma Dataset
 
