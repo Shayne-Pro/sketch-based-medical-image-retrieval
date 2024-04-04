@@ -27,22 +27,25 @@ This repository uses the BraTS Dataset from the Multimodal Brain Tumor Segmentat
 After downloading and extracting the datasets, place them in the `SharedResources/datasets` directory. The directory structure should look like this:
 
 ```
-SharedResources/
-    └── datasets/
-        ├── MICCAI_BraTS_2019_Data_Training/
-        │   ├── BraTS19_2013_0_1/
-        │   │   ├── BraTS19_2013_0_1_flair.nii.gz
-        │   │   ├── BraTS19_2013_0_1_t1.nii.gz
-        │   │   ├── BraTS19_2013_0_1_t1ce.nii.gz
-        │   │   ├── BraTS19_2013_0_1_t2.nii.gz
-        │   │   └── BraTS19_2013_0_1_seg.nii.gz
-        │   ├── BraTS19_2013_1_1/
-        │   │   └── ...
-        │   └── ...
-        ├── MICCAI_BraTS_2019_Data_Validation/
-        │   └── ...
-        └── MICCAI_BraTS_2019_Data_Testing/
-            └── ...
+.
+├── App/
+├── ModelTraining/
+└── SharedResources/
+   └── datasets/
+       ├── MICCAI_BraTS_2019_Data_Training/
+       │   ├── BraTS19_2013_0_1/
+       │   │   ├── BraTS19_2013_0_1_flair.nii.gz
+       │   │   ├── BraTS19_2013_0_1_t1.nii.gz
+       │   │   ├── BraTS19_2013_0_1_t1ce.nii.gz
+       │   │   ├── BraTS19_2013_0_1_t2.nii.gz
+       │   │   └── BraTS19_2013_0_1_seg.nii.gz
+       │   ├── BraTS19_2013_1_1/
+       │   │   └── ...
+       │   └── ...
+       ├── MICCAI_BraTS_2019_Data_Validation/
+       │   └── ...
+       └── MICCAI_BraTS_2019_Data_Testing/
+           └── ...
 ```
 
 ## Preprocessing
@@ -55,7 +58,7 @@ This command will preprocess the datasets specified in the `src_dir_path` of `pr
 
 ## Trained Models
 
-The trained models used in this repository can be downloaded from Zenodo:
+The trained models, namely `bottom2x2_margin-10-epoch=0299.ckpt`, used in this repository can be downloaded from Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10925122.svg)](https://doi.org/10.5281/zenodo.10925122)
 
