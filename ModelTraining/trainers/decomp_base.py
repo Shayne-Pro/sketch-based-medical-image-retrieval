@@ -169,6 +169,7 @@ class DecompTrainerBase(pl.LightningModule):
             drop_last=False,
             initial_randomize=False,
             patient_ids=self.config.dataset.patient_ids,
+            dataset_class=self.config.dataset.dataset_class,
             window_width=getattr_else_none(self.config.dataset, 'window_width'),
             window_center=getattr_else_none(self.config.dataset, 'window_center'),
             window_scale=getattr_else_none(self.config.dataset, 'window_scale'),
