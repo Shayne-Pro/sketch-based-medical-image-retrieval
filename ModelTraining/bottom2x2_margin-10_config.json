@@ -30,8 +30,26 @@
   "models": {
     "input_dim": 3,
     "emb_dim": 512,
-    "enc_filters": [32, 64, 128, 256, 512, 512, 512, 512],
-    "dec_filters": [512, 512, 512, 512, 256, 128, 64, 32],
+    "enc_filters": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      512,
+      512,
+      512
+    ],
+    "dec_filters": [
+      512,
+      512,
+      512,
+      512,
+      256,
+      128,
+      64,
+      32
+    ],
     "seg_output_dim": 4,
     "latent_size": 2,
     "use_vae_nEnc": true,
@@ -47,7 +65,9 @@
     },
     "use_perceptual": true,
     "use_emphasis": false,
-    "detach_at_e_rec": ["nac"],
+    "detach_at_e_rec": [
+      "nac"
+    ],
     "minimize_aac_norm": true,
     "d_aac_margin_loss_type": "kldiv"
   },
@@ -58,7 +78,11 @@
   },
   "dataset": {
     "dataset_name": "MICCAIBraTSSubDataset",
-    "modalities": ["t1", "t1ce", "flair"],
+    "modalities": [
+      "t1",
+      "t1ce",
+      "flair"
+    ],
     "train_root_dir_paths": [
       "${ROOT_PATH}/SharedResources/datasets/MICCAI_BraTS_2019_Data_Validation_Slices",
       "${ROOT_PATH}/SharedResources/datasets/MICCAI_BraTS_2019_Data_Testing_Slices"
@@ -70,7 +94,8 @@
     "batch_size": 30,
     "test_batch_size": 30,
     "num_workers": 32,
-    "patient_ids": false
+    "patient_ids": false,
+    "dataset_class": "normal"
   },
   "loss_weight": {
     "recon": 1.0,
